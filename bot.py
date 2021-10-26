@@ -8,12 +8,9 @@ from decouple import config
 from telethon import Button, TelegramClient, events
 from telethon.errors.rpcerrorlist import PhotoInvalidDimensionsError
 from htmlwebshot import WebShot
-import pdfkit
-path_wkhtmltopdf = r'C:\Program Files (x86)\wkhtmltopdf\bin\wkhtmltopdf.exe'
-config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
-pdfkit.from_url("http://google.com", "out.pdf", configuration=config)
 
-shot = WebShot()
+
+shot = WebShot
 
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s", level=logging.INFO
