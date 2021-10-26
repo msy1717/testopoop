@@ -1,4 +1,6 @@
 # < (c) 2021 @Godmrunal >
+#thanks to @Lost_In_The_Darkk
+#kang with credit
 
 import logging
 import os
@@ -34,7 +36,7 @@ async def start_(event):
         ),
         buttons=[
             [
-                Button.url("Repo", url="https://github.com/msy1717/startBot"),
+                Button.url("Repo", url="https://github.com/msy1717/htmlWebshot"),
                 Button.url(
                     "Developer", url="https://t.me/Godmrunal"
                 ),
@@ -78,7 +80,7 @@ async def web_ss_capture(event):
             remove(web_ss_path)
          except Exception as e:
             await xx.edit(
-                f"**ERROR**: \n`{e}`\n**URL**: `{xurl}`\n\nKindly forward this message to @Godmrunal."
+                f"**ERROR**: \n`{e}`\n**URL**: `{xurl}`\n\nKindly forward this message to @BotzOfficial_Support."
             )
     elif event.document and event.file.name.endswith(".html"):
         xx = await event.reply("Downloading file.... Please wait..")
@@ -87,12 +89,12 @@ async def web_ss_capture(event):
         shot.create_pic(html=path, output="webss_bh.jpg")
         try:
             await event.reply(
-                "**ScreenShot generated.**\n\n~ @BotzHub", file="webss_bh.jpg"
+                "**ScreenShot generated.**\n\n~ @Botz_Official", file="webss_bh.jpg"
             )
             await xx.delete()
         except PhotoInvalidDimensionsError:
             await event.reply(
-                "**ScreenShot generated.**\n\n~ @BotzHub", file="webss_bh.jpg",
+                "**ScreenShot generated.**\n\n~ @Botz_Official", file="webss_bh.jpg",
                 force_document=True
             )
             await xx.delete()
