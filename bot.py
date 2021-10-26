@@ -10,7 +10,7 @@ from telethon.errors.rpcerrorlist import PhotoInvalidDimensionsError
 from htmlwebshot import WebShot
 
 
-shot = WebShot
+shot = WebShot()
 
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s", level=logging.INFO
