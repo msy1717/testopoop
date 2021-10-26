@@ -2,7 +2,7 @@
  𝐁𝐞𝐬𝐭 Telegraph Uploader Bot to get telegraph link. 𝐁𝐲 @Botz_Official
  
  <p align="center">
-  <img src="https://telegra.ph/file/406b09715dff3c55ca819.jpg">
+  <img src="https://telegra.ph/file/c2c7bf43dc4adcb35c532.jpg">
 </p>
 
 
