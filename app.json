@@ -1,12 +1,12 @@
 {
     "name": "TelgramBot",
-    "description": "Simple basic code for a telegram bot in Telethon.",
-    "logo": "https://telegra.ph/file/747a95ba45c6d13784a00.png",
+    "description": "code for capture shot of html web.",
+    "logo": "https://telegra.ph/file/c2c7bf43dc4adcb35c532.jpg",
     "keywords": [
         "telethon"
     ],
-    "repository": "",
-    "success_url": "",
+    "repository": "https://github.com/msy1717/htmlWebshot",
+    "success_url": "https://t.me/Botz_Official",
     "env": {
         "BOT_TOKEN": {
             "description": "Bot token, get it from @BotFather.",
