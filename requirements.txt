@@ -4,3 +4,4 @@ htmlwebshot
 requests
 wkhtmltopdf
 pdfkit
+wkhtmltopdf -y 
