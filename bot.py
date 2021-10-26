@@ -1,6 +1,7 @@
 # < (c) 2021 @Godmrunal >
 
 import logging
+inport os
 from os import remove
 
 import requests
@@ -12,12 +13,14 @@ from htmlwebshot import WebShot
 
 shot = WebShot()
 
+Bot_Token = os.environ.get("BOT_TOKEN")
+
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s", level=logging.INFO
 )
 
 bot = TelegramClient(None, api_id=6, api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e").start(
-    bot_token=("2014340067:AAEA4BPorTFMET0-pLfdAtN5Crwt9NkChag")
+    bot_token=("Bot_Token")
 )
 
 logging.info("Starting bot...")
