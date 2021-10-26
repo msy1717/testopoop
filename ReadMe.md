@@ -1,5 +1,5 @@
-# Telegraph Uploader
- 𝐁𝐞𝐬𝐭 Telegraph Uploader Bot to get telegraph link. 𝐁𝐲 @Botz_Official
+# Html Webshot
+ 𝐁𝐞𝐬𝐭 Html Webshot Bot . 𝐁𝐲 @Botz_Official
  
  <p align="center">
   <img src="https://telegra.ph/file/c2c7bf43dc4adcb35c532.jpg">
