@@ -1,7 +1,7 @@
 # < (c) 2021 @Godmrunal >
 
 import logging
-inport os
+import os
 from os import remove
 
 import requests
