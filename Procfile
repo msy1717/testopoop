@@ -1,1 +1,0 @@
-Botz: python bot.py
