@@ -3,3 +3,4 @@ telethon
 htmlwebshot
 requests
 wkhtmltopdf
+pdfkit
