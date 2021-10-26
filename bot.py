@@ -8,7 +8,6 @@ from decouple import config
 from telethon import Button, TelegramClient, events
 from telethon.errors.rpcerrorlist import PhotoInvalidDimensionsError
 from htmlwebshot import WebShot
-shot = WebShot()
 
 logging.basicConfig(
     format="[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s", level=logging.INFO
@@ -75,27 +74,7 @@ async def web_ss_capture(event):
             await xx.edit(
                 f"**ERROR**: \n`{e}`\n**URL**: `{xurl}`\n\nKindly forward this message to @BotzHubChat."
             )
-    elif event.document and event.file.name.endswith(".html"):
-        xx = await event.reply("Downloading file.... Please wait..")
-        path = await bot.download_file(event.document)
-        await xx.edit("Generating a screenshot...")
-        shot.create_pic(html=path, output="webss_bh.jpg")
-        try:
-            await event.reply(
-                "**ScreenShot generated.**\n\n~ @BotzHub", file="webss_bh.jpg"
-            )
-            await xx.delete()
-        except PhotoInvalidDimensionsError:
-            await event.reply(
-                "**ScreenShot generated.**\n\n~ @BotzHub", file="webss_bh.jpg",
-                force_document=True
-            )
-            await xx.delete()
-
-        try:
-            remove("webss_bh.jpg")
-        except Exception as e:
-            logging.warning(e)
+ 
 
 logging.info("\n\nBot has started.\n(c) @Godmrunal")
 
