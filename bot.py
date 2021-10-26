@@ -31,7 +31,7 @@ logging.info("Starting bot...")
 @bot.on(events.NewMessage(incoming=True, pattern="^/start"))
 async def start_(event):
     await event.reply(
-        "Hi {}!\nI am a Html Webshot bot. \n\n**Usage:** This Html Webshot  bot in python!".format(
+        "Hi {}!\nI am a Html Webshot bot. \n\n**Usage:** Send Link directly to bot To get your webshot".format(
             (await bot.get_entity(event.sender_id)).first_name
         ),
         buttons=[
