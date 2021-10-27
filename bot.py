@@ -78,7 +78,7 @@ async def web_ss_capture(event):
             )
             await xx.delete()
             remove(web_ss_path)
-         except Exception as e:
+        except Exception as e:
             await xx.edit(
                 f"**ERROR**: \n`{e}`\n**URL**: `{xurl}`\n\nKindly forward this message to @BotzOfficial_Support."
             )
