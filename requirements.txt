@@ -1,6 +1,1 @@
-python-decouple
-telethon
-htmlwebshot
-requests
-wkhtmltopdf
-pdfkit
+pybeastx
