@@ -1,22 +1,56 @@
 {
-    "name": "TelgramBot",
-    "description": "code for capture shot of html web.",
-    "logo": "https://telegra.ph/file/c2c7bf43dc4adcb35c532.jpg",
+    "name": "Ultroid UserBot",
+    "description": "Pluggable telegram userbot, made in python using Telethon.",
+    "logo": "https://telegra.ph/file/031957757a4f6a5191040.jpg",
     "keywords": [
-        "telethon"
+        "Telethon",
+        "telegram",
+        "userbot",
+        "python",
+        "ultroid"
     ],
-    "repository": "https://github.com/msy1717/htmlWebshot",
-    "success_url": "https://t.me/Botz_Official",
+    "repository": "https://github.com/TeamUltroid/Ultroid",
+    "website": "https://ultroid.tech",
+    "success_url": "https://t.me/TheUltroid",
+    "stack": "container",
     "env": {
-        "BOT_TOKEN": {
-            "description": "Bot token, get it from @BotFather.",
+        "API_ID": {
+            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
+            "value": "", 
+            "required": false
+        },
+        "API_HASH": {
+            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
+            "value": "",
+            "required": false
+        },
+        "SESSION": {
+            "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
             "value": ""
+        },
+        "REDIS_URI": {
+            "description": "Redis endpoint URL, from redislabs.com",
+            "value": ""
+        },
+        "REDIS_PASSWORD": {
+            "description": "Redis endpoint password, from redislabs.com",
+            "value": ""
+        },
+        "HEROKU_API": {
+            "description": "Heroku API token. Mandatory for Heroku Deploy...",
+            "value": "",
+            "required": false
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Name of your Heroku app, given in the first blank on this page. To be added if deploying to heroku ONLY.",
+            "value": "",
+            "required": false
         }
     },
-    "buildpacks": [
-        {
-            "url": "heroku/python"
+    "formation": {
+        "ultroid": {
+            "quantity": 1,
+            "size": "free"
         }
-    ],
-    "stack": "container"
+    }
 }
