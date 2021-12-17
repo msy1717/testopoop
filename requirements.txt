@@ -1,1 +1,1 @@
-pybeastx
+pybeastx==2021.10.11.4
