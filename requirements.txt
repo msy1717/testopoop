@@ -1,3 +1,17 @@
 telethon
 pytz
+git
+Pillow>=5.3.0
+PyGithub
+youtube-dl
+bs4
+heroku3
+telegraph
+youtube-search
+youtube-search-python
+mimetypes
+html_telegraph_poster
+contextlib
+youtubesearchpython
+youtube_dl
 beastxuserbot==2021.10.11.7
