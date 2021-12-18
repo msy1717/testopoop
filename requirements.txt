@@ -1,2 +1,2 @@
 telethon
-pybeastx==2021.10.11.4
+beastxuserbot==2021.10.11.4
